@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/carlos/TPS/TP1-PDS2-main/TP1'
+g++ -pg -std=c++11 -g -Wall -o ./bin/run.out  ./obj/Round.o  ./obj/memlog.o  ./obj/Main.o  ./obj/Player.o  ./obj/Card.o  ./obj/List.o  ./obj/Node.o  ./obj/Vector.o
+./bin//run.out -1 entrada.txt -p /tmp/roundlog.out
+make: Leaving directory '/home/carlos/TPS/TP1-PDS2-main/TP1'
+ 
