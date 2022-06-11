@@ -1,0 +1,435 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jun 11 02:00:00 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 39)
+OBJ = $(patsubst $(SRC_FOLDER)%.cpp, $(OBJ_FOLDER)%.o, $(SRC))
+# makefile (from 'Makefile', line 38)
+SRC = $(wildcard $(SRC_FOLDER)*.cpp)
+# makefile (from 'Makefile', line 28)
+INCLUDE_FOLDER = ./include/
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from 'Makefile', line 37)
+TARGET = run.out
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 40)
+EXE = $(BIN_FOLDER)/run.out
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/carlos/TPS/TP1-PDS2-main/TP1
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /home/carlos/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/node
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from 'Makefile', line 41)
+ANALISAMEM = ./analisamem/bin/analisamem
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 24)
+CXXFLAGS = -pg -std=c++11 -g -Wall
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_CWD = /mnt/d/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/carlos/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/d/anaconda3:/mnt/d/anaconda3/Library/mingw-w64/bin:/mnt/d/anaconda3/Library/usr/bin:/mnt/d/anaconda3/Library/bin:/mnt/d/anaconda3/Scripts:/mnt/c/MinGW/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/FFmpeg:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Users/Micro/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/mnt/c/Users/Micro/AppData/Roaming/npm:/mnt/c/Users/Micro/go/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-252428cf-ec88-4618-8838-571f4e2239cf.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/carlos/TPS/TP1-PDS2-main/TP1
+# default
+.LOADED := 
+# environment
+WSL_INTEROP = /run/WSL/18_interop
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/carlos
+# environment
+LOGNAME = carlos
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /home/carlos/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from 'Makefile', line 31)
+SRC_FOLDER = ./src/
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 23)
+CC = g++
+# makefile (from 'Makefile', line 29)
+BIN_FOLDER = ./bin/
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = carlos
+# makefile
+.DEFAULT_GOAL := all
+# environment
+NAME = DESKTOP-18BCSG9
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Micro/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/d/Microsoft VS Code
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 32)
+ASSETS = ./assets/
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 36)
+MAIN = Main
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 30)
+OBJ_FOLDER = ./obj/
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu-20.04
+# variable set hash-table stats:
+# Load=82/1024=8%, Rehash=0, Collisions=10/132=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2064, inode 91583): 13 files, no impossibilities.
+# ./src (device 2064, inode 92084): 10 files, no impossibilities.
+# src (device 2064, inode 92084): 10 files, no impossibilities.
+
+# 33 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.cpp
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+all: build run
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
+
+perf: bin//run.out
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 49):
+	$(EXE) -1 $(ASSETS)entrada50k.txt -p /tmp/entrada50k.out
+	$(EXE) -1 $(ASSETS)entrada60k.txt -p /tmp/entrada60k.out
+	$(EXE) -1 $(ASSETS)entrada70k.txt -p /tmp/entrada70k.out
+	$(EXE) -1 $(ASSETS)entrada80k.txt -p /tmp/entrada80k.out
+	$(EXE) -1 $(ASSETS)entrada90k.txt -p /tmp/entrada90k.out
+	$(EXE) -1 $(ASSETS)entrada100k.txt -p /tmp/entrada100k.out
+	
+
+# Not a target:
+bin//run.out:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/List.o: src/List.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'List'
+#  Last modified 2022-06-10 14:18:37.6192601
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+obj/Main.o: src/Main.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Main'
+#  Last modified 2022-06-10 14:50:30.9492601
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+obj/Card.o: src/Card.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Card'
+#  Last modified 2022-05-31 13:57:42
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 15:06:34.0292601
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/memlog.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 13:57:42
+#  File has been updated.
+#  Successfully updated.
+
+build: obj/Round.o obj/memlog.o obj/Main.o obj/Player.o obj/Card.o obj/List.o obj/Node.o obj/Vector.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build
+# automatic
+ 
+# % := 
+# automatic
+# * := 
+# automatic
+# + := obj/Round.o obj/memlog.o obj/Main.o obj/Player.o obj/Card.o obj/List.o obj/Node.o obj/Vector.o
+# automatic
+# | := 
+# automatic
+# < := obj/Round.o
+# automatic
+# ^ := obj/Round.o obj/memlog.o obj/Main.o obj/Player.o obj/Card.o obj/List.o obj/Node.o obj/Vector.o
+# automatic
+# ? := obj/Round.o obj/memlog.o obj/Main.o obj/Player.o obj/Card.o obj/List.o obj/Node.o obj/Vector.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/20=15%
+#  recipe to execute (from 'Makefile', line 58):
+	$(CC) $(CXXFLAGS) -o $(BIN_FOLDER)$(TARGET) $(OBJ)
+
+# Not a target:
+src/Round.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:45:30.8792601
+#  File has been updated.
+#  Successfully updated.
+
+obj/Node.o: src/Node.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Node'
+#  Last modified 2022-05-31 13:57:42
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+# Not a target:
+src/Vector.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:33:03.2892601
+#  File has been updated.
+#  Successfully updated.
+
+obj/Player.o: src/Player.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Player'
+#  Last modified 2022-06-10 14:50:07.3692601
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+mem: bin//run.out
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 46):
+	$(EXE) -1 entrada.txt -p /tmp/roundlog.out -l
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/List.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:18:35.1092601
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/Main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:50:28.4792601
+#  File has been updated.
+#  Successfully updated.
+
+run: bin//run.out
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 64):
+	$(EXE) -1 entrada.txt -p /tmp/roundlog.out
+
+# Not a target:
+src/Card.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 13:57:42
+#  File has been updated.
+#  Successfully updated.
+
+obj/memlog.o: src/memlog.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'memlog'
+#  Last modified 2022-05-31 13:57:42
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+# Not a target:
+src/Node.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 13:57:42
+#  File has been updated.
+#  Successfully updated.
+
+obj/Round.o: src/Round.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Round'
+#  Last modified 2022-06-10 14:50:06.8992601
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+obj/Vector.o: src/Vector.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Vector'
+#  Last modified 2022-06-10 14:33:08.2692601
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+
+# Not a target:
+src/Player.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:45:18.0992601
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=25/1024=2%, Rehash=0, Collisions=0/76=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 58 / storage = 534 B / avg = 9 B
+# current buf: size = 8162 B / used = 534 B / count = 58 / avg = 9 B
+
+# strcache performance: lookups = 84 / hit rate = 30%
+# hash-table stats:
+# Load=58/8192=1%, Rehash=0, Collisions=3/84=4%
+# Finished Make data base on Sat Jun 11 02:00:00 2022
+
+ 

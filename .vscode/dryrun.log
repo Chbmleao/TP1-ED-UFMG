@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/carlos/TPS/TP1-PDS2-main/TP1'
+g++ -pg -std=c++11 -g -Wall -c src/Round.cpp -o obj/Round.o -I./include/
+g++ -pg -std=c++11 -g -Wall -c src/memlog.cpp -o obj/memlog.o -I./include/
+g++ -pg -std=c++11 -g -Wall -c src/Main.cpp -o obj/Main.o -I./include/
+g++ -pg -std=c++11 -g -Wall -c src/Player.cpp -o obj/Player.o -I./include/
+g++ -pg -std=c++11 -g -Wall -c src/Card.cpp -o obj/Card.o -I./include/
+g++ -pg -std=c++11 -g -Wall -c src/List.cpp -o obj/List.o -I./include/
+g++ -pg -std=c++11 -g -Wall -c src/Node.cpp -o obj/Node.o -I./include/
+g++ -pg -std=c++11 -g -Wall -c src/Vector.cpp -o obj/Vector.o -I./include/
+g++ -pg -std=c++11 -g -Wall -o ./bin/run.out  ./obj/Round.o  ./obj/memlog.o  ./obj/Main.o  ./obj/Player.o  ./obj/Card.o  ./obj/List.o  ./obj/Node.o  ./obj/Vector.o
+./bin//run.out -1 entrada.txt -p /tmp/roundlog.out
+make: Leaving directory '/home/carlos/TPS/TP1-PDS2-main/TP1'
+ 

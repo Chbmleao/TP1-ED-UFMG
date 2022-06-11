@@ -1,9 +1,0 @@
-1 600 S
-Carlos
-2 350 HC
-Wagner
-Carlos
-####
-Carlos 1200
-Wagner 1000
-Thiago 800
